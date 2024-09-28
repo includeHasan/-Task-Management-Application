@@ -1,9 +1,10 @@
 const express = require('express');
 const router = express.Router();
-const {register,login} = require('../controllers/user');
+const {registerUser,loginUser} = require('../controllers/user'); // Import the functions from user.js controller file
+    l
 
-router.post('/register',register);
+router.post('/register',registerUser);
 
-router.post('/login',login);
+router.post('/login',loginUser);
 
 module.exports = router;
